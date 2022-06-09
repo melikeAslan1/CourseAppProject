@@ -1,0 +1,2 @@
+﻿_ViewImport kullandik.
+TagHelper kullandik.

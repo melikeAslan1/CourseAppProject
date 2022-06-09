@@ -1,0 +1,46 @@
+﻿@model Student
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    @*<form action="/course/apply">*@
+    <form asp-action="apply" method="POST">
+
+        <p>
+            @*<label for="name">Adınız</label>*@
+            <label asp-for="Name">Adınız</label>
+            @*<input type="text" name="name" />*@
+            <input asp-for="Name"/>
+        </p>
+
+
+        <p>
+            <label asp-for="Email">Eposta</label>
+            <input asp-for="Email" />
+        </p>
+
+
+        <p>
+            <label asp-for="Phone">Telefon</label>
+            <input asp-for="Phone" />
+        </p>
+
+
+        <p>
+            <label asp-for="Confirm">Kursa Katılacak Mısınız</label>
+            <select asp-for="Confirm">
+                <option value="true">Evet Geliyorum</option>
+                <option value="false">Hayır Gelmiyorum</option>
+
+            </select>
+        </p>
+        <input type="button" value="Kaydet" />
+    </form>
+
+
+
+    </body>
+</html>
